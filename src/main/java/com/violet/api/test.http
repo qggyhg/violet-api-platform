@@ -1,0 +1,18 @@
+### 测试注册接口（发送一个 POST 包裹）
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "violet",
+  "age": 22,
+  "major": "Computer Science",
+  "password": "2222"
+
+}
+###
+GET http://localhost:8080/user/info
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW9sZXQiLCJpYXQiOjE3NzM0OTc5OTAsImV4cCI6MTc3MzUwMTU5MH0.e5G-gP8T82TvdFdubGfjyj6otOAVlJmNaBTFRvNKmk0
+
+###
+GET http://localhost:8080/api/quote
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2aW9sZXQiLCJpYXQiOjE3NzM0OTc5OTAsImV4cCI6MTc3MzUwMTU5MH0.e5G-gP8T82TvdFdubGfjyj6otOAVlJmNaBTFRvNKmk0
